@@ -101,7 +101,7 @@
                         <h2 class="aside-title">Расписание <br>тренировок</h2>
                     </div>
                     <div>
-                        <p class="headline">22 -29 июня</p>
+                        <p class="headline">22-29 июня</p>
                     </div>
                 </div>
 
@@ -152,7 +152,8 @@
                 </div>
             </div>
         </section>
-        <section class="form">
+
+        <!-- <section class="form">
                 <h2 class="form-title">Подпишитесь на рассылку</h2>
                 <div class="form-wrap">
                     <input type="email" placeholder="Ваш e-mail">
@@ -161,8 +162,23 @@
                 <div class="check">
                 <input  type="checkbox" name="a" value="check" checked> Согласен с обработкой персональных данных
                 </div>
-        </section>
+        </section> -->
 
+        <form action="#" class="form"> 
+            <h2 class="form-title">Подпишитесь на рассылку</h2>
+            <div class="form-wrap">
+                <input type="email" placeholder="Ваш e-mail" name="email" class="subscribe-email" required> 
+                <button type="submit" class="form-email-btn">Подписаться</button> 
+            </div>
+         
+        <label class="check-label" for="subscribe-checkbox"> 
+            <input class="check-label-default" type="checkbox" id="subscribe-checkbox"> 
+            <span class="check-label-new"></span> 
+            <span class="check-label-text">Согласен с обработкой <a href="#"> персональных данных</a></span> 
+        </label>
+
+    </form>
+        
         <section  class="features">
             <div class="container">
                 <div class="features-item">
