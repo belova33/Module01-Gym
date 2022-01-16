@@ -45,9 +45,11 @@
             </div>
             <div class="contant">
                 <h1 class="title">онлайн тренировки любой сложности</h1>
-                <p class="description">> 15 тренировок</p>
-                <p class="desc">в области спортивной физиологии и нутрициологии</p>
-                <a class="contant-btn" href="#">Узнать подробнее</a>            
+                <p class="description">&gt; 15 тренировок</p>
+                <div class="contant-desc">
+                    <p class="desc">в области спортивной физиологии и нутрициологии</p>
+                    <a class="contant-btn" href="#">Узнать подробнее</a> 
+                </div>           
                 <div>
                     <img class="bg-arrow" src="images/arrow.svg" alt="arrow">
                 </div>  
@@ -164,21 +166,28 @@
                 </div>
         </section> -->
 
-        <form action="#" class="form"> 
+        <form action="#" class="form">
+
             <h2 class="form-title">Подпишитесь на рассылку</h2>
             <div class="form-wrap">
-                <input type="email" placeholder="Ваш e-mail" name="email" class="subscribe-email" required> 
-                <button type="submit" class="form-email-btn">Подписаться</button> 
+                <input type="email" name="email" placeholder="Ваш e-mail" class="form-email" required> 
+                <input type="submit" name="submit" id="submit" value="Подписаться" class="form-email-btn">
             </div>
          
-        <label class="check-label" for="subscribe-checkbox"> 
-            <input class="check-label-default" type="checkbox" id="subscribe-checkbox"> 
-            <span class="check-label-new"></span> 
-            <span class="check-label-text">Согласен с обработкой <a href="#"> персональных данных</a></span> 
-        </label>
+            <div class="subscription-label">
+                <label class="custom-checkbox"> <!-- label нужен для активации чекбокса по клику -->
+                    <input class="hidden-checkbox" type="checkbox">
+                    <div class="checkbox"> <!-- Элемент, который будет стилизован под чекбокс -->
+                        <img class="checkmark" src="images/check_box.svg" alt="">
+                        <!-- SVG - сама иконка чекбокса -->
+                        </div>
+                        <label for="01" class="subscription-label-text">Согласен с обработкой <a href="#" target="_blank"> персональных данных</a></label>
+                </label>
+            </div>            
 
-    </form>
-        
+        </form>
+
+     
         <section  class="features">
             <div class="container">
                 <div class="features-item">
@@ -196,7 +205,7 @@
                     <ul class="advantages-item">
                         <li>
                             <h4  class="advantages-lead">Экономия времени</h4>
-                            <p>Не нужно тратить время на дорогу</p>                       
+                            <p>Не нужно тратить время на дорогу</p>                
                         </li>
                         <li>
                             <h4  class="advantages-lead">Индивидуальный подход</h4>
