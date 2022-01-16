@@ -123,12 +123,15 @@ body {
     letter-spacing: 0.035em;
     color: #2B3541;
 }
+.contant-desc {
+    margin-left: 93px;
+}
 .desc {
     font-size: 18px;
     font-weight: 300;
     line-height: 150%;
     color: #2B3541;
-    margin-left: 93px;
+    
     width: 297px;
     margin-top: -18px;
     margin-bottom: 55px;
@@ -148,8 +151,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
-    transition: 0.3s;
-    margin-left: 93px;
+    transition: 0.3s;    
     margin-top: 25px;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);   
 }
@@ -244,9 +246,6 @@ h3 {
     bottom: 0;
     color: #2B3541;
     border: none;  
-    margin: right; 
-    width: 90px;
-    height: 29px;
     background-color: #FBF138;
     padding: 10px 20px;    
     font-weight: 700;
@@ -256,6 +255,13 @@ h3 {
     letter-spacing: 0.03em;
     text-decoration: none;
     transition: 0.3s;    
+}
+.preview-btn:hover {
+    background-color: #2B3541;
+    color: #FBF138;      
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+    left: 150px;
+    top: 300px;
 }
 
 .aside-header {
@@ -354,11 +360,10 @@ h4 {
     display: flex;
     background: #F3F3F3;
     flex-direction: column;
-    align-items: center;    
+    padding-left: 550px;    
 }
 .form-title {
     flex-direction: row;
-    text-align: center;
     padding-top: 0px;
 }
 .form-title::before {
@@ -378,23 +383,11 @@ h4 {
 
 input {        
     outline: none;
-    padding: 21px 250px 21px 19px;
+    padding: 22px 250px 21px 19px;
     border: 0px;
     font-size: 18px;
     line-height: 150%;
     color: rgba(43, 53, 65, 1);    
-}
-.check-label-new {
-    background-image: url(../images/check\ box\ empty.svg);
-
-}
-.check-label-default {
-    background-image: url(../images/check_box.svg);
-}
-.check-label-text 
-
-label {
-    padding-bottom: 80px;
 }
 
 .form-email-btn {
@@ -402,7 +395,7 @@ label {
     border: none;     
     background-color: #FBF138;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
-    padding: 21px 43px;
+    padding: 20px 43px;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 16px;
@@ -418,7 +411,7 @@ label {
     width: 252px;        
     background-color: #FBF138;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
-    padding: 21px 51px;
+    padding: 20px 51px;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 16px;
@@ -428,6 +421,60 @@ label {
     text-align: center;
     transition: 0.3s;
 }
+
+
+
+
+.subscription-label {
+    display: flex;
+    position: relative;
+    nav-left: 0;
+    margin-top: 15px;
+    margin-bottom: 80px;
+}
+.custom-checkbox { /* Тут мы просто центрируем чекбокс и текст*/
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.custom-checkbox .checkbox {
+    margin-right: 10px;
+}
+
+.custom-checkbox input {
+    -webkit-appearance: none; /* Скрываем оригинальный чекбокс*/
+    position: absolute; /* После скрытия оставется пустое пространство, но абсолютное позиционирование это устранит */
+}
+
+.checkbox { /* Тут стилизуем сам чекбокс */
+    position: relative;
+    width: 18px;
+    height: 18px;
+    background: rgb(0, 0, 0);
+}
+
+.checkmark { /* Тут центритуем и пишем стили для иконки */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    display: block; /* Показываем иконку */
+}
+
+.custom-checkbox input:checked ~ .checkbox .checkmark {
+    display: none; /* Скрываем иконку, когда чекбокс неактивен */
+}
+
+.custom-checkbox input:checked ~ .checkbox {
+    background: rgb(0, 0, 0);
+    /* Если вы хотите не только отображать икнонку, но и менять сам чекбокс после активации - напишите сюда код для активного состояния */
+}
+
+
+
+
 .features-item {
     display: flex;
     justify-content: space-between;
