@@ -102,9 +102,9 @@ body {
     padding-top: 186px;
     margin: 0;
     color: #2B3541;
-    z-index: 2;
+    z-index: 1;
     padding-top: 186px;
-    padding-bottom: 258px;
+    padding-bottom: 183px;
     margin-bottom: 100px;
 }
 .title {
@@ -171,17 +171,16 @@ body {
     box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
 }
 .bg-img {    
-    position: relative;
+    
     position: absolute;
-    left: 690px;
-    top: 107px;
-    right: -175;
-    height: 852px;
-    width: 996px;   
+    right: 0;
+    top: 107px;    
+    height: auto;
+    width: 70%;   
     z-index: 1; 
 }
 .bg-arrow {    
-    margin-bottom: -246px;
+    margin-bottom: -156px;
 } 
 
 /* main */
@@ -260,8 +259,7 @@ h3 {
     background-color: #2B3541;
     color: #FBF138;      
     box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
-    left: 150px;
-    top: 300px;
+    
 }
 
 .aside-header {
@@ -328,6 +326,24 @@ h3 {
     bottom: 80px;
     transition: 0.3s;    
 }
+.aside-grid-item:nth-child(4) 
+.aside-text {
+    position: absolute;     
+    bottom: 0px; 
+}
+.aside-grid-item:nth-child(4) 
+h4 {
+    position: absolute;     
+    bottom: 100px; 
+}
+.aside-grid-item:nth-child(4) 
+.aside-grid-cover img {
+    position: absolute;     
+    bottom: 180px; 
+}
+
+
+
 h4 {   
     font-weight: 700;
     font-size: 18px;
@@ -360,7 +376,7 @@ h4 {
     display: flex;
     background: #F3F3F3;
     flex-direction: column;
-    padding-left: 550px;    
+    padding-left: 25%;    
 }
 .form-title {
     flex-direction: row;
@@ -422,9 +438,6 @@ input {
     transition: 0.3s;
 }
 
-
-
-
 .subscription-label {
     display: flex;
     position: relative;
@@ -432,6 +445,7 @@ input {
     margin-top: 15px;
     margin-bottom: 80px;
 }
+
 .custom-checkbox { /* Тут мы просто центрируем чекбокс и текст*/
     display: flex;
     align-items: center;
@@ -520,6 +534,15 @@ ul.advantages-item {
     align-items: center;
     justify-content: space-between;
 }
+.footer-logo {
+    display: block;
+    background-image: url(../images/logo.svg);
+    width: 97px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    gap: 25px;
+}
 .footer-nav {
     gap: 90px;
 }
@@ -535,7 +558,33 @@ ul.advantages-item {
     text-decoration: none;
     margin-left: 110px;
 }
+.e-mail a::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: #FBF138;
+    margin-right: -10px;
+    border-radius: 100%;
+    display: inline-block;
+}
 
+
+.footer-Instagram {
+    display: block;
+    width: 27px;
+    height: 27px;
+    background-image: url(../images/in.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.footer-facebook {
+    display: block;
+    width: 27px;
+    height: 27px;
+    background-image: url(../images/fb.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .footer-text {
     font-weight: 300;
     font-size: 14px;
