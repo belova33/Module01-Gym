@@ -30,18 +30,19 @@
                             </ul>
                         </nav>
                 </div>                
-                <div class="social">
-                    <a href="#" class="Instagram"></a>
-                    <a href="#" class="facebook"></a>
-                </div>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="Instagram" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="facebook" target="_blank"></a>
+                    </li>
+                </ul>
            </div>
         </div>
     </header>
 
     <div class="bg">
-        <div>
-            <img src="images/bg.png" class="bg-img" alt="image">
-        </div>
         <div class="container">
             
             <div class="contant">
@@ -55,9 +56,11 @@
                     <img class="bg-arrow" src="images/arrow.svg" alt="arrow">
                 </div>  
             </div> 
-            
-            
-
+            <div class="box">
+                <div class="box-gradient-left"></div>
+                <div class="box-gradient-right"></div>          
+                <img class="box-image" src="images/girl.png" class="bg-img" alt="image">
+            </div>    
         </div>        
     </div>
 
@@ -69,42 +72,46 @@
                         Ближайшие события
                     </h2>
                 </div>
+
                 <div class="preview-grid">
 
-                    <div class="preview-grid-item">
-                        <div class="preview-grid-cover">
-                            <img src="images/preview1.png" alt="preview1">                        
-                            <p class="data">29.06 - 4.07</p>
-                            <h3>Марафон выносливости</h3>
-                            <a class="preview-btn" href="#">марафон</a>
-                        </div>
+                    <div class="preview-box1">
+                        <div class="preview-box-gradient">
+                           <p class="preview-date">29.06 - 4.07</p>
+                           <h3>Марафон выносливости</h3>    
+                           <a class="preview-btn-hover" href="#">участвовать</a>                        
+                           <a class="preview-btn" href="#">марафон</a>  
+                      </div>
                     </div>
 
-                    <div class="preview-grid-item">
-                        <div class="preview-grid-cover">
-                            <img src="images/preview2.png" alt="preview2">
-                            <p class="data">9.07</p>
-                            <h3>Как стать тренером?</h3>
-                            <a class="preview-btn" href="#">вебинар</a>
-                        </div>
+                    <div class="preview-box2">
+                        <div class="preview-box-gradient">
+                           <p class="preview-date">9.07</p>
+                           <h3>Как стать тренером?</h3> 
+                           <a class="preview-btn-hover" href="#">участвовать</a>                           
+                           <a class="preview-btn" href="#">вебинар</a>  
+                      </div>
                     </div>
 
-                    <div class="preview-grid-item">
-                        <div class="preview-grid-cover">
-                            <img src="images/preview3.png" alt="preview3">                        
-                            <p class="data">15.07</p>
-                            <h3>Йога, как стиль жизни</h3>
-                            <a class="preview-btn" href="#">вебинар</a>
-                        </div>
+                    <div class="preview-box3">
+                        <div class="preview-box-gradient">
+                           <p class="preview-date">15.07</p>
+                           <h3>Йога, как стиль жизни</h3>
+                           <a class="preview-btn-hover" href="#">участвовать</a>                           
+                           <a class="preview-btn" href="#">вебинар</a>
+
+                      </div>
                     </div>
+                     
                 </div>
             </div>
         </section>
+
         <section class="aside">
             <div class="container">
                 <div class="aside-header">
                     <div>
-                        <h2 class="aside-title">Расписание <br>тренировок</h2>
+                        <h2>Расписание <br>тренировок</h2>
                     </div>
                     <div>
                         <p class="headline">22-29 июня</p>
@@ -112,49 +119,76 @@
                 </div>
 
                 <div class="aside-grid">
-                    <div class="aside-grid-item">
-                        <div class="aside-grid-cover">                    
-                            <p class="aside-data">22 июня, 10:00</p>
-                            <img src="images/body.svg" alt="preview1">
-                            <h4>Функциональный тренинг</h4>                           
+
+
+                    <div class="aside-grid-item">                                            
+                        <div class="aside-data">
+                            <p>22 июня, 10:00</p>
+                        </div>
+                        <div class="aside-name">
+                            <img class="aside-img" src="images/body.svg" alt="body">
+                            <h4 class="aside-title">Функциональный тренинг</h4>  
+                            <p class="aside-text">Подготовка тела перед физической нагрузкой.</p> 
                         </div>
                     </div>
-                    <div class="aside-grid-item">
-                        <div class="aside-grid-cover">
-                            <p class="aside-data">24 июня, 10:00</p>
-                            <img src="images/bottle.svg" alt="preview2">                        
-                            <h4>Body sculpt</h4>                           
+
+                    <div class="aside-grid-item">                                            
+                        <div class="aside-data">
+                            <p>24 июня, 10:00</p>
+                        </div>
+                        <div class="aside-name">
+                            <img class="aside-img" src="images/bottle.svg" alt="bottle">
+                            <h4 class="aside-title">Body sculpt</h4>  
+                            <p class="aside-text">Подготовка тела перед физической нагрузкой.</p> 
                         </div>
                     </div>
-                    <div class="aside-grid-item">
-                        <div class="aside-grid-cover">
-                            <p class="aside-data">26 июня, 11:00</p>
-                            <img src="images/dumbbell.svg" alt="preview3">                        
-                            <h4>L.A.B.</h4>                           
+
+                    <div class="aside-grid-item">                                            
+                        <div class="aside-data">
+                            <p>26 июня, 11:00</p>
+                        </div>
+                        <div class="aside-name">
+                            <img class="aside-img" src="images/dumbbell.svg" alt="dumbbell">
+                            <h4 class="aside-title">L.A.B.</h4>  
+                            <p class="aside-text">Подготовка тела перед физической нагрузкой.</p> 
                         </div>
                     </div>
-                    <div class="aside-grid-item">
-                        <div class="aside-grid-cover">                                    
-                            <p class="aside-data">23 июня, 11:00</p>
-                            <img src="images/jump.svg" alt="preview4">
-                            <h4>Силовой микс</h4>
-                            <p class="aside-text">Упражнения помогут создать <br>красивый рельеф и прийти<br> в спортивную форму.</p>                           
+
+                    <div class="aside-grid-item">                                            
+                        <div class="aside-data">
+                            <p>23 июня, 11:00</p>
+                        </div>
+                        <div class="aside-name">
+                            <img class="aside-img" src="images/jump.svg" alt="jump">
+                            <h4 class="aside-title">Силовой микс</h4>  
+                            <p class="aside-text-gradient">Упражнения помогут создать <br>красивый рельеф и прийти<br> в спортивную форму.</p> 
                         </div>
                     </div>
-                    <div class="aside-grid-item">
-                        <div class="aside-grid-cover">
-                            <p class="aside-data">25 июня, 11:00</p>
-                            <img src="images/heart.svg" alt="preview5">                            
-                            <h4>Дыхательные практики</h4>                           
+                    
+                    
+                    <div class="aside-grid-item">                                            
+                        <div class="aside-data">                                   
+                            <p>25 июня, 11:00</p>
+                        </div>
+                        <div class="aside-name">
+                            <img class="aside-img" src="images/heart.svg" alt="heart">
+                            <h4 class="aside-title">Дыхательные практики</h4>
+                            <p class="aside-text">Подготовка тела перед физической нагрузкой.</p> 
                         </div>
                     </div>
-                    <div class="aside-grid-item">
-                        <div class="aside-grid-cover">
-                            <p class="aside-data">27 июня, 10:00</p>
-                            <img src="images/weight.svg" alt="preview6">                        
-                            <h4>Комплексная разминка</h4>                           
+
+                    <div class="aside-grid-item">                                            
+                        <div class="aside-data">                                   
+                            <p>27 июня, 10:00</p>
                         </div>
-                    </div>                   
+                        <div class="aside-name">
+                            <img class="aside-img" src="images/weight.svg" alt="weight">
+                            <h4 class="aside-title">Комплексная разминка</h4>
+                            <p class="aside-text">Подготовка тела перед физической нагрузкой.</p> 
+                        </div>
+                    </div>
+
+                                    
                 </div>
             </div>
         </section>
