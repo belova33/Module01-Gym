@@ -16,9 +16,9 @@
         <div class="container">
             <div class="header">
 
-                <!-- <div class="header-burger">
+                <div class="header-burger">
                     <button class="burger" onclick="openModal()"></button>
-                </div> -->
+                </div>
 
                 <div class="header-item">
                     <a href="index.html" class="header-logo"></a>
@@ -50,8 +50,7 @@
                     <p class="desc">в области спортивной физиологии и нутрициологии</p>
                     <a class="contant-btn" href="#">Узнать подробнее</a> 
                 </div>                
-                <button  class="bg-arrow">
-                    <img href="#" src="images/arrow.svg" alt="arrow">
+                <button  class="bg-arrow">                 
                 </button>                 
             </div> 
             <div class="box">
@@ -113,7 +112,7 @@
                         <div class="aside-name">
                             <img class="aside-img" src="images/body.svg" alt="body">
                             <h4 class="aside-title">Функциональный тренинг</h4>  
-                            <p class="aside-text">Подготовка тела перед физической нагрузкой.</p> 
+                            <p class="aside-text">Система высокоинтенсивных тренировок.</p> 
                         </div>
                     </div>
                     <div class="aside-grid-item">                                            
@@ -121,7 +120,7 @@
                         <div class="aside-name">
                             <img class="aside-img" src="images/bottle.svg" alt="bottle">
                             <h4 class="aside-title">Body sculpt</h4>  
-                            <p class="aside-text">Подготовка тела перед физической нагрузкой.</p> 
+                            <p class="aside-text">Комплекс упражнений с дополнительным оборудованием.</p> 
                         </div>
                     </div>
                     <div class="aside-grid-item">                                            
@@ -129,7 +128,7 @@
                         <div class="aside-name">
                             <img class="aside-img" src="images/dumbbell.svg" alt="dumbbell">
                             <h4 class="aside-title">L.A.B.</h4>  
-                            <p class="aside-text">Подготовка тела перед физической нагрузкой.</p> 
+                            <p class="aside-text">Силовая тренировка <br>с акцентом на мышцы ягодиц, ног и пресса.</p> 
                         </div>
                     </div>
                     <div class="aside-grid-item">                                            
@@ -141,12 +140,11 @@
                         </div>
                     </div>                    
                     <div class="aside-grid-item">                                            
-                        <p class="aside-data">25 июня, 11:00</p>
-                        
+                        <p class="aside-data">25 июня, 11:00</p>                        
                         <div class="aside-name">
                             <img class="aside-img" src="images/heart.svg" alt="heart">
                             <h4 class="aside-title">Дыхательные практики</h4>
-                            <p class="aside-text">Подготовка тела перед физической нагрузкой.</p> 
+                            <p class="aside-text">Природный способ воздействовать на организм <br>с целью его оздоровления.</p> 
                         </div>
                     </div>
                     <div class="aside-grid-item">                                            
@@ -213,9 +211,9 @@
     <footer class="footer">
         <div class="container">
 
-         <!-- <div class="header-burger">
-                <button class="burger" onclick="openModal()"></button>
-            </div> -->
+            <div class="header-burger">
+                    <button class="burger" onclick="openModal()"></button>
+            </div>
 
             <div class="footer-item">
                 <a href="index.html" class="footer-logo"></a>
@@ -244,6 +242,97 @@
             </div>
         </div>           
     </footer>
+
+    <!---------BURGER MENU--------->
+
+    <div id="modal" class="modal-header-burger">
+
+            <a href="#" class="header-logo"></a>
+        
+            <ul class="modal-header-nav">
+                <li><a href="#">Мероприятия</a></li>
+                <li><a href="#">Расписание</a></li>
+                <li><a href="#">О компании</a></li>                            
+            </ul>
+
+            <div class="wrap"></div>
+        
+            <a class="modal-contant-btn" href="#">Узнать подробнее</a> 
+
+    <ul class="modal-social">
+        <li  class="social-icon instagram" >
+            <a href="#" class="instagram" target="_blank"></a>
+        </li>
+        <li class="social-icon facebook">
+            <a href="#" class="facebook" target="_blank"></a>
+        </li>
+    </ul>
+
+
+
+        <button class="burger-close" onclick="closeModalMenu()"></button>
+    </div>
+
+    
+
+    <!---------POPUP WINDOWS--------->
+
+    <div>
+        <div id="Modal_one" class="popup">
+            <div class="popup__body">
+              <div class="popup__content">
+                <a href="##" class="popup__close"></a>
+                <p class="popup__title">Заявка на участие
+                    «Марафон&nbsp;выносливости»</p>
+                <p class="popup__text">
+                    Заполните все поля, и мы пришлем информацию в ближайшее время
+                </p>
+                <form class="popup__form">
+                    <input type="email" placeholder="Ваш e-mail" required>
+                    <input type="tel" placeholder="Ваш номер телефона" required>
+                    <a href="#" class="bg-button">Отправить</a>
+                </form>
+                </div>
+            </div>
+        </div>
+        
+        <div id="Modal_two" class="popup">
+            <div class="popup__body">
+              <div class="popup__content">
+                <a href="##" class="popup__close"></a>
+                <p class="popup__title">Заявка на участие
+                    «Как&nbsp;стать&nbsp;тренером?»</p>
+                <p class="popup__text">
+                    Заполните все поля, и мы пришлем информацию в ближайшее время
+                </p>
+                <form class="popup__form">
+                    <input type="email" placeholder="Ваш e-mail" required>
+                    <input type="tel" placeholder="Ваш номер телефона" required>
+                    <a href="#" class="bg-button">Отправить</a>
+                </form>
+                </div>
+            </div>
+        </div>
+        
+        <div id="Modal_three" class="popup">
+            <div class="popup__body">
+              <div class="popup__content">
+                <a href="##" class="popup__close"></a>
+                <p class="popup__title">Заявка на участие
+                    «Йога,&nbsp;как&nbsp;стиль&nbsp;жизни»</p>
+                <p class="popup__text">
+                    Заполните все поля, и мы пришлем информацию в ближайшее время
+                </p>
+                <form class="popup__form">
+                    <input type="email" placeholder="Ваш e-mail" required>
+                    <input type="tel" placeholder="Ваш номер телефона" required>
+                    <a href="#" class="bg-button">Отправить</a>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script>
 
@@ -289,7 +378,7 @@ function openModal() {
     document.getElementById("modal").style.top = "0px";
 }
 function closeModal() {
-    document.getElementById("modal").style.top = "-400px";
+    document.getElementById("modal").style.top = "-500px";
 }
     </script>
 
