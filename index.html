@@ -16,19 +16,20 @@
         <div class="container">
             <div class="header">
 
-                <div class="header-burger">
-                    <button class="burger" onclick="openModal()"></button>
-                </div>
+                
 
                 <div class="header-item">
                     <a href="index.html" class="header-logo"></a>
-                        <nav>
-                            <ul class="header-nav">
-                                <li><a href="index.html">Мероприятия</a></li>
-                                <li><a href="#" class="active">Расписание</a></li>
-                                <li><a href="#">О компании</a></li>                            
-                            </ul>
-                        </nav>
+                    <div class="header-burger">
+                        <button class="burger" onclick="openModal()"></button>
+                    </div>
+                    <nav>
+                        <ul class="header-nav">
+                            <li><a href="#preview">Мероприятия</a></li>
+                            <li><a href="#aside">Расписание</a></li>
+                            <li><a href="#features">О компании</a></li>                            
+                        </ul>
+                    </nav>
                 </div>                
                 <ul class="social">
                     <li  class="social-icon instagram" >
@@ -48,10 +49,9 @@
                 <p class="description">&gt; 15 тренировок</p>
                 <div class="contant-desc">
                     <p class="desc">в области спортивной физиологии и нутрициологии</p>
-                    <a class="contant-btn" href="#">Узнать подробнее</a> 
+                    <a class="contant-btn" href="#preview">Узнать подробнее</a> 
                 </div>                
-                <button  class="bg-arrow">                 
-                </button>                 
+                <button class="bg-arrow"></button>                 
             </div> 
             <div class="box">
                 <div class="box-gradient-left"></div>
@@ -61,7 +61,7 @@
         </div>        
     </div>
     <div class="main">
-        <section class="preview">
+        <section class="preview" id="preview">
             <div class="container">
                 <div class="preview-header">
                     <h2>
@@ -73,7 +73,8 @@
                         <div class="preview-box-gradient">
                            <p class="preview-date">29.06 - 4.07</p>
                            <h3>Марафон выносливости</h3>    
-                           <a class="preview-btn-hover" href="#">участвовать</a>                        
+                           <a class="preview-btn-hover" href="#bg-gray">участвовать</a>                        
+                           <a class="preview-btn-plus" href="#bg-gray">+</a>
                            <a class="preview-btn" href="#">марафон</a>  
                       </div>
                     </div>
@@ -81,7 +82,8 @@
                         <div class="preview-box-gradient">
                            <p class="preview-date">9.07</p>
                            <h3>Как стать тренером?</h3> 
-                           <a class="preview-btn-hover" href="#">участвовать</a>                           
+                           <a class="preview-btn-hover" href="#bg-gray">участвовать</a>  
+                           <a class="preview-btn-plus" href="#bg-gray">+</a>                         
                            <a class="preview-btn" href="#">вебинар</a>  
                       </div>
                     </div>
@@ -89,14 +91,15 @@
                         <div class="preview-box-gradient">
                            <p class="preview-date">15.07</p>
                            <h3>Йога, как стиль жизни</h3>
-                           <a class="preview-btn-hover" href="#">участвовать</a>                           
+                           <a class="preview-btn-hover" href="#bg-gray">участвовать</a>
+                           <a class="preview-btn-plus" href="#bg-gray">+</a>                           
                            <a class="preview-btn" href="#">вебинар</a>
                       </div>
                     </div>                     
                 </div>
             </div>
         </section>
-        <section class="aside">
+        <section class="aside" id="aside">
             <div class="container">
                 <div class="aside-header">
                     <div>
@@ -158,7 +161,7 @@
                 </div>
             </div>
         </section>        
-        <section class="bg-gray">
+        <section class="bg-gray" id="bg-gray">
             <div class="container">
                 <form action="#" class="form">
                     <h2 class="form-title">Подпишитесь на рассылку</h2>
@@ -173,13 +176,13 @@
                 </form>
             </div>
         </section>     
-        <section  class="features">
+        <section  class="features" id="features">
             <div class="container">
                 <div class="features-item">
                     <div class="features-content">
                         <h2 class="features-title">О компании</h2>
                         <p class="features-text">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbsp;нами и вы сами увидите, что мы проводим не&nbsp;только онлайн-тренировки.</p>
-                        <a class="form-btn" href="#">Записаться</a>
+                        <a class="form-btn" href="#bg-gray">Записаться</a>
                     </div>
                     <div >
                         <img class="kettlebell" src="images/kettlebell.png" alt="girl with kettlebell">
@@ -210,20 +213,16 @@
     </div>
     <footer class="footer">
         <div class="container">
-
-            <div class="header-burger">
-                    <button class="burger" onclick="openModal()"></button>
-            </div>
-
             <div class="footer-item">
-                <a href="index.html" class="footer-logo"></a>
-                    <nav class="footer-nav">
-                        <ul class="footer-nav">
-                            <li><a href="index.html">Мероприятия</a></li>
-                            <li><a href="#" class="active">Расписание</a></li>
-                            <li><a href="#">О компании</a></li>                            
-                        </ul>
-                    </nav>                                     
+                <div class="footer-burger">
+                    <button class="burger" onclick="openModal()"></button>
+                </div>
+                <a href="index.html" class="footer-logo"></a>                    
+                <ul class="footer-nav">
+                    <li><a href="#preview">Мероприятия</a></li>
+                    <li><a href="#aside">Расписание</a></li>
+                    <li><a href="#features">О компании</a></li>                            
+                </ul>                                                        
                 <div class="e-mail">
                     <a href="mailto:mail@example.com">info@freefit.com</a>
                 </div>                
@@ -245,141 +244,78 @@
 
     <!---------BURGER MENU--------->
 
-    <div id="modal" class="modal-header-burger">
+    <div id="modal" class="modal">
 
             <a href="#" class="header-logo"></a>
         
             <ul class="modal-header-nav">
-                <li><a href="#">Мероприятия</a></li>
-                <li><a href="#">Расписание</a></li>
-                <li><a href="#">О компании</a></li>                            
+                <li><a href="#preview">Мероприятия</a></li>
+                <li><a href="#aside">Расписание</a></li>
+                <li><a href="#features">О компании</a></li>                            
             </ul>
 
-            <div class="wrap"></div>
-        
-            <a class="modal-contant-btn" href="#">Узнать подробнее</a> 
+            <button class="burger-close" onclick="closeModal()"></button>
 
-    <ul class="modal-social">
-        <li  class="social-icon instagram" >
-            <a href="#" class="instagram" target="_blank"></a>
-        </li>
-        <li class="social-icon facebook">
-            <a href="#" class="facebook" target="_blank"></a>
-        </li>
-    </ul>
+            <ul class="modal-social">
+                <li  class="social-icon instagram" >
+                    <a href="#" class="instagram" target="_blank"></a>
+                </li>
+                <li class="social-icon facebook">
+                    <a href="#" class="facebook" target="_blank"></a>
+                </li>
+            </ul>
 
-
-
-        <button class="burger-close" onclick="closeModalMenu()"></button>
+            <div class="wrap">        
+            <a class="modal-contant-btn" href="#preview">Узнать подробнее</a> 
+            </div>        
     </div>
-
-    
-
-    <!---------POPUP WINDOWS--------->
-
-    <div>
-        <div id="Modal_one" class="popup">
-            <div class="popup__body">
-              <div class="popup__content">
-                <a href="##" class="popup__close"></a>
-                <p class="popup__title">Заявка на участие
-                    «Марафон&nbsp;выносливости»</p>
-                <p class="popup__text">
-                    Заполните все поля, и мы пришлем информацию в ближайшее время
-                </p>
-                <form class="popup__form">
-                    <input type="email" placeholder="Ваш e-mail" required>
-                    <input type="tel" placeholder="Ваш номер телефона" required>
-                    <a href="#" class="bg-button">Отправить</a>
-                </form>
-                </div>
-            </div>
-        </div>
-        
-        <div id="Modal_two" class="popup">
-            <div class="popup__body">
-              <div class="popup__content">
-                <a href="##" class="popup__close"></a>
-                <p class="popup__title">Заявка на участие
-                    «Как&nbsp;стать&nbsp;тренером?»</p>
-                <p class="popup__text">
-                    Заполните все поля, и мы пришлем информацию в ближайшее время
-                </p>
-                <form class="popup__form">
-                    <input type="email" placeholder="Ваш e-mail" required>
-                    <input type="tel" placeholder="Ваш номер телефона" required>
-                    <a href="#" class="bg-button">Отправить</a>
-                </form>
-                </div>
-            </div>
-        </div>
-        
-        <div id="Modal_three" class="popup">
-            <div class="popup__body">
-              <div class="popup__content">
-                <a href="##" class="popup__close"></a>
-                <p class="popup__title">Заявка на участие
-                    «Йога,&nbsp;как&nbsp;стиль&nbsp;жизни»</p>
-                <p class="popup__text">
-                    Заполните все поля, и мы пришлем информацию в ближайшее время
-                </p>
-                <form class="popup__form">
-                    <input type="email" placeholder="Ваш e-mail" required>
-                    <input type="tel" placeholder="Ваш номер телефона" required>
-                    <a href="#" class="bg-button">Отправить</a>
-                </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <script>
 
-// Smooth Scroll
+    // Smooth Scroll
 
-    const links = document.querySelectorAll(".banner-link");
-for (const link of links) {
-link.addEventListener("click", clickHandler);
-}
-function clickHandler(e) {
-e.preventDefault();
-const href = this.getAttribute("href");
-document.querySelector(href).scrollIntoView({
-    behavior: "smooth"
-});
-}
+        const links = document.querySelectorAll(".banner-link");
+        for (const link of links) {
+        link.addEventListener("click", clickHandler);
+        }
+        function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+        document.querySelector(href).scrollIntoView({
+            behavior: "smooth"
+        });
+        }
 
-// Button down
+    // Button down
 
-window.onscroll = function(){scrollFunction()};
-const upbuttons = document.querySelectorAll(".button-down");
-for (const upbutton of upbuttons) {
-    upbutton.addEventListener("click", clickHandler);
-}
-function clickHandler(e) {
-e.preventDefault();
-const href = this.getAttribute("href");
-document.querySelector(href).scrollIntoView({
-    behavior: "smooth"
-});
-}
-function scrollFunction(){
-    if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
-        document.getElementById('btnDown').className = 'button-down visible';
-    } else {
-        document.getElementById('btnDown').className = 'button-down hidden';
-    }
-}
+        window.onscroll = function(){scrollFunction()};
+        const upbuttons = document.querySelectorAll(".button-down");
+        for (const upbutton of upbuttons) {
+            upbutton.addEventListener("click", clickHandler);
+        }
+        function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute("href");
+        document.querySelector(href).scrollIntoView({
+            behavior: "smooth"
+        });
+        }
+        function scrollFunction(){
+            if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
+                document.getElementById('btnDown').className = 'button-down visible';
+            } else {
+                document.getElementById('btnDown').className = 'button-down hidden';
+            }
+        }
 
-// Menu
+    // Menu
 
-function openModal() {
-    document.getElementById("modal").style.top = "0px";
-}
-function closeModal() {
-    document.getElementById("modal").style.top = "-500px";
-}
+        function openModal() {
+            document.getElementById("modal").style.top = "0px";
+        }
+        function closeModal() {
+            document.getElementById("modal").style.top = "-500px";
+        }
     </script>
 
 </body>
