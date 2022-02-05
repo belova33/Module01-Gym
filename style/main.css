@@ -502,6 +502,23 @@ input {
     text-align: center;
     transition: 0.3s;
 }
+.form-email-btn-mobil {
+    color: #2B3541;
+    border: none;     
+    background-color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    display: block;
+    padding: 19px;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
 .form-btn {
     color: #2B3541;
     border: none;
@@ -516,7 +533,7 @@ input {
     letter-spacing: 0.03em;
     text-decoration: none;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.3s;    
 }
 label {
     font-size: 11px;
@@ -596,7 +613,9 @@ label {
 .radio:checked + label::before{
    border-radius: 100%;
 }
-
+.form-email-btn-mobil {
+    display: none;
+}
 
 .features-item {
     display: flex;
@@ -636,6 +655,13 @@ ul.advantages-item {
     margin-bottom: 162px;
     margin-top: 0px;
 }
+.advantages-mobil {
+    display: none;
+}
+
+
+/* footer*/
+
 .footer {
     display: block;
     align-items: center;
@@ -668,6 +694,11 @@ ul.advantages-item {
     font-size: 14px;
     font-weight: 400;
 }
+.footer-main,
+.footer-info {
+    display: flex;
+    align-items: center;
+}
 .e-mail a {
     font-weight: bold;
     font-size: 16px;
@@ -693,6 +724,9 @@ ul.advantages-item {
     opacity: 0.3;
     display: flex;
     justify-content: space-between;
+}
+.preview-btn-plus {
+    display: none;
 }
 
 
@@ -796,23 +830,70 @@ ul.advantages-item {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
-        .header-nav, 
-        .footer-nav {
+
+        .footer-item {
+            display: block;
+        }
+        .header-nav {
             display: none;
         }
+        .footer-main {
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        .footer-info {
+            justify-content: end;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .footer-text {
+            margin-bottom: 50px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .container {        
+            margin: 0 auto;
+            display: block;
+            padding-left: 10px;
+            padding-right: 10px;            
+        }
+        .kettlebell {
+            max-width: 100%;
+            height: auto;
+        }
+        .form-email-btn-mobil {
+            display: block;
+            max-width: 100%;
+        }
+        .form-email-btn {
+            display: none;
+        }
+        
     }
 
     @media (max-width: 360px) {
         .container {
-        max-width: 340px;
-        margin: 0 auto;
-        display: block;
-        padding-left: 10px;
-        padding-right: 10px;
+            max-width: 340px;
+        }
+        .header-logo {
+            width: 78px;
+            height: 24px;
+            margin-right: 21px;        
+        }
+        .burger {
+            margin-right: 57px;
+        }
+        .social {
+            gap: 20px;            
+        }
+        li.social-icon {
+            width: 27px;
+            height: 27px;
         }
         .header {
             padding-top: 30px;
-            padding-bottom: 60px;
+            padding-bottom: 17px;
         }
         .header-item {
             flex-basis: 100%;
@@ -821,48 +902,52 @@ ul.advantages-item {
             font-size: 26px;            
             line-height: 130%;            
             width: 344px;
+            margin-bottom: 45px;
         }
         .description {
             font-weight: 300;
             font-size: 26px;
             line-height: 100%;
-            letter-spacing: 0.03em;
+            letter-spacing: 0.04em;
             color: #2B3541;
+            margin-bottom: 37px;
         }
         .contant-desc {
             margin-left: 0px;
+
         }
         .desc {
             font-size: 16px;
-            margin-top: -18px;
-            margin-bottom: 40px;
+            margin-bottom: 60px;
+            width: 255px;
         }
         .contant-btn {
-            padding: 20px 73px;
+            padding: 20px 72px;
+            width: 100%;
         }
         .box {
-            width: 100%;
-            height: 310px;
+            width: 100%;           
             margin-top: 80px;
         }
         .box-image {
             width: 100%;
-            height: 100%;            
+            height: auto; 
+            left: 0;
+            top: 10px;           
         }
         .box-gradient-left {
-            height: 347px;
+            height: 290px;
         }   
         .box-gradient-right {
-            height: 347px;
+            height: 290px;
         }   
         .bg {
-            margin-bottom: 100px;            
+            margin-bottom: 80px;            
         }
-
         .preview-grid {
             display: flex;
             flex-wrap: wrap;
-            margin-bottom: 40px;        
+            margin-bottom: 60px;        
             gap: 10px;            
         }
         h2 {
@@ -872,15 +957,14 @@ ul.advantages-item {
             margin-bottom: 20px;
         }
         .preview-box1 {
-            width: 165px;
+            width: 163px;
             height: 310px;            
         }
         .preview-box2 {
-            width: 165px;
+            width: 163px;
             height: 310px;            
         }
-        .preview-box2 {
-            width: 165px;
+        .preview-box3 {
             height: 310px;
             grid-area: 2fr; 
             background-image: url(../images/Vebinar2.png);        
@@ -927,6 +1011,10 @@ ul.advantages-item {
             justify-content: center;
             line-height: 30px;
             text-decoration: none;
+            display: block;
+        }
+        .preview-box2 {
+            background-image: url(../images/Vebinar2.png);
         }
         .preview-box3 {
             object-fit: cover;
@@ -978,7 +1066,124 @@ ul.advantages-item {
             font-size: 16px;
             line-height: 150%;            
         }
+
+
+        .form-title {
+            padding-top: 52px;
+            width: 216px;
+            margin: 0 auto;
+        }
+        .form-title::before {            
+            width: 30px;
+            height: 30px;            
+            margin-right: -15px;            
+        }
+        .agreement {
+            margin-left: 0;
+            padding-bottom: 0;     
+            margin-bottom: 45px;     
+        }
+        .form-wrap {
+            display: flex;
+            gap: 20px;            
+            flex-direction: column;
+            width: 100%;
+            margin-top: 52px;
+            margin-bottom: 20px;
+        }
+        input {
+            padding: 18px 48px 18px 18px;            
+        }
+        .form-email-btn-mobil {
+            width: 340px; 
+            display: block;                                 
+        }   
+        form {
+            padding-bottom: 40px;
+        }
+        .features-title {
+            margin-top: 78px;
+        }
+        .kettlebell {
+            max-width: 100%;
+            height: auto;
+            margin-top: 40px;
+        }
+        .features-text {
+            font-size: 16px;
+            line-height: 150%;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .advantages {
+            display: none;
+        }
+        .advantages-mobil {
+            display: block;
+            margin-bottom: 45px;
+        }
+        ul.advantages-item {
+            display: flex;            
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 16px;
+            line-height: 130%;
+            gap: 0;
+            margin-bottom: 0px;
+        }
+        .form-btn {
+            display: block;
+            width: 240px;
+        }    
+
+        .footer-main {
+            display: block;
+            margin-top: 12px;
+        }
+        .footer-info {
+            display: block;
+        }
+        .footer-logo {
+            margin: 0 auto;
+        }
+        .footer-nav {
+            width: 100%;
+            gap: 0;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .footer-info {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .e-mail a::before {
+            width: 20px;
+            height: 20px;
+        }
+        .e-mail a {            
+            font-size: 12px;
+            line-height: 150%;            
+            margin-left: 0px;
+        }
+        .footer-text {
+            font-size: 10px;
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 25px;
+        }
+        .social {
+            gap: 23px;
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
     }
+
 
 
 
