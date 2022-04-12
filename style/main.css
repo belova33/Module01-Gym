@@ -545,6 +545,9 @@ label {
     justify-content: center;
     margin-left: 23%;
 }
+.agreement2 {
+    display: none;
+}
 .checkbox:checked,
 .checkbox:not(:checked){
    position: absolute;
@@ -749,9 +752,7 @@ ul.advantages-item {
         flex-direction: column;
         flex-wrap: wrap;        
     }
-    .bg-arrow {
-        display: none;
-    }
+    
     .box {
         position: relative;
         margin-top: 100px;
@@ -851,7 +852,7 @@ ul.advantages-item {
         }
     }
 
-    @media (max-width: 768px) {
+    /*@media (max-width: 768px) {
         .container {        
             margin: 0 auto;
             display: block;
@@ -870,60 +871,248 @@ ul.advantages-item {
             display: none;
         }
         
-    }
+    }*/
 
-    @media (max-width: 360px) {
+
+    @media (max-width: 768px) {
         .container {
-            max-width: 340px;
+            max-width: 768px;
+            margin: 0 auto;
+            display: block;
+            padding-left: 10px;
+            padding-right: 10px; 
+        }
+        .header {
+            padding: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
         }
         .header-logo {
             width: 78px;
             height: 24px;
-            margin-right: 21px;        
-        }
-        .burger {
-            margin-right: 57px;
-        }
-        .social {
-            gap: 20px;            
-        }
-        li.social-icon {
-            width: 27px;
-            height: 27px;
-        }
-        .header {
-            padding-top: 30px;
-            padding-bottom: 17px;
+            margin-right: 0px;        
         }
         .header-item {
-            flex-basis: 100%;
+            flex-basis: 37.5%;
+        }
+        .social {
+            gap: 15px;            
+        }
+        li.social-icon {
+            width: 26px;
+            height: 26px;
+        }
+        .contant-box {
+            display: flex;
         }
         .title {
-            font-size: 26px;            
+            font-size: 25px;            
             line-height: 130%;            
-            width: 344px;
-            margin-bottom: 45px;
+            width: 380px;            
         }
         .description {
             font-weight: 300;
-            font-size: 26px;
+            font-size: 25px;
             line-height: 100%;
-            letter-spacing: 0.04em;
+            letter-spacing: 0.06em;
             color: #2B3541;
-            margin-bottom: 37px;
+            margin-top: 45px;
+            margin-bottom: 35px;
         }
         .contant-desc {
             margin-left: 0px;
+        }
+        .contant-btn {            
+            padding: 20px 27px;
+            width: 252px;
+            height: 0;
+        }
+        .bg-arrow {
+            margin-top: 60px;
+        }
+        .box {
+            width: 50%;
+            height: auto;           
+            margin-top: 0px;
+        }
+        .box-image {
+            position: absolute;
+            top: 100px;
+            width: 387px;
+            height: 315px;
+            left: -41px;
+        }
+        .box-gradient-left {
+            height: 415px;
+        }   
+        .box-gradient-right {
+            height: 415px;
+        }  
+        .bg {
+            margin-bottom: 95px;
+        }
 
+        h2 {
+            font-size: 25px;  
+            line-height: 150%;
+            margin: 0;          
         }
-        .desc {
-            font-size: 16px;
-            margin-bottom: 60px;
-            width: 255px;
+        .preview-header {
+            margin-bottom: 17px;
         }
-        .contant-btn {
-            padding: 20px 72px;
+        .preview-grid {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 95px;        
+            gap: 25px;            
+        }
+        .preview-box1 {
+            max-width: 350px;
+            height: 300px;            
+        }
+        .preview-box2 {
+            max-width: 350px;
+            height: 300px;            
+        }
+        .preview-box3 {
+            max-height: 310px;
+             
+            background-image: url(../images/Vebinar4.png);  
             width: 100%;
+}      
+        }
+        h3 {
+            position: absolute;
+            width: 112px;            
+            left: 19px;
+            top: 48px;            
+            font-size: 16px;
+            line-height: 120%;
+            position: inherit;  
+            text-align: left;          
+        }
+        .preview-date {
+            font-size: 12px;            
+            margin-top: 20px;
+            margin-left: 19px;
+        }
+        .preview-btn {
+            position: absolute;
+            left: 0;
+            right: auto;
+            bottom: 0;            
+            padding: 6px 15px;
+            font-weight: 400;
+            font-size: 12px;
+            opacity: 1;
+        }
+        a.preview-btn-hover {
+            display: none;
+        }
+        .preview-btn-plus {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;            
+            width: 30px;
+            height: 30px;
+            background-color: #2B3541;
+            font-size: 36px;
+            color: #FBF138; 
+            opacity: 1;
+            text-align: center;
+            justify-content: center;
+            line-height: 30px;
+            text-decoration: none;
+            display: block;
+        }
+        .headline {
+            font-size: 18px;            
+        }
+        .aside-header {
+            margin-bottom: 38px;
+        }
+        .form-title {
+            padding-top: 18px;
+            width: 237px;
+            justify-content: center;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+        .form-wrap {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .form-email-btn {
+            width: 370px;
+            margin-top: 20px;
+            margin-bottom: 47px;
+        }
+        .agreement {
+            display: none;
+        }
+        .agreement2 {
+            display: block;
+        }
+        .features-item {
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .features-title {
+            margin-top: 85px; 
+            margin-bottom: 12px;           
+        }
+        .features-text {
+            font-size: 15.5px;
+            line-height: 150%;
+            width: 324px;
+            margin-bottom: 53px;
+        }
+        .kettlebell {
+            margin-top: 88px;
+            width: 366px;
+            height: 223px;
+        }
+        ul.advantages-item {
+            font-size: 15px;
+            gap: 0;
+        }
+        .advantages-item {
+            margin-bottom: 62px;
+            margin-top: 0px;
+        }
+        .footer-main {            
+            margin-top: 24px;
+        }
+        .footer-nav a {
+            font-size: 11px;
+        }
+        .footer-nav {
+            gap: 32px;
+        }
+        .footer-info {            
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        .e-mail a::before {            
+            width: 15px;
+            height: 15px;
+        }
+        .e-mail a {            
+            font-size: 12px;            
+        }
+        .footer-text { 
+            font-size: 10px;
+            margin-bottom: 15px;
+        }
+    
+
+    @media (max-width: 360px) {
+        .container {
+            max-width: 360px;
+        }
+        .contant-desc {
+            margin-left: 0px;
         }
         .box {
             width: 100%;           
@@ -941,32 +1130,29 @@ ul.advantages-item {
         .box-gradient-right {
             height: 290px;
         }   
-        .bg {
-            margin-bottom: 80px;            
-        }
+        
         .preview-grid {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             flex-wrap: wrap;
             margin-bottom: 60px;        
             gap: 10px;            
         }
-        h2 {
-            font-size: 26px;
-        }
+        
         .preview-header {
             margin-bottom: 20px;
         }
         .preview-box1 {
-            width: 163px;
-            height: 310px;            
+            max-width: 163px;
+            max-height: 310px;           
         }
         .preview-box2 {
             width: 163px;
-            height: 310px;            
+            max-height: 310px;           
         }
         .preview-box3 {
             height: 310px;
-            grid-area: 2fr; 
+            grid-area: 100%; 
             background-image: url(../images/Vebinar2.png);        
         }
         h3 {
@@ -1066,8 +1252,6 @@ ul.advantages-item {
             font-size: 16px;
             line-height: 150%;            
         }
-
-
         .form-title {
             padding-top: 52px;
             width: 216px;
@@ -1213,7 +1397,7 @@ ul.advantages-item {
     padding: 29px 10px;
     box-sizing: border-box;
     flex-direction: column;
-        
+    z-index: 99;      
 }
 .modal-header-nav a {
     font-weight: 400;
@@ -1265,6 +1449,7 @@ ul.advantages-item {
     top: 275px;
     right: 31px;
 }
+/*
 .modal-contant-btn {
     position: absolute;
     display: block;
@@ -1287,7 +1472,7 @@ ul.advantages-item {
     transition: 0.3s;
     margin-top: 25px;
     box-shadow: 0px 13px 24px rgb(251 241 56 / 30%);
-}
+}*/
 .wrap {
     position: absolute;
     height: 130px;
@@ -1296,4 +1481,21 @@ ul.advantages-item {
     bottom: 0;
     background-color: #2B3541;
     opacity: 40%;
+}
+
+/*popup*/
+
+.popup__body {
+    max-width: 360px;
+    height: 465px;    
+    background-color: #F3F3F3;    
+    position: absolute;
+    top: -500px;
+    left: 0;
+    right: 0;
+    margin: 20px auto 0;
+    transition: 0.5s;
+    padding: 29px 10px;
+    box-sizing: border-box;
+    flex-direction: column;
 }
