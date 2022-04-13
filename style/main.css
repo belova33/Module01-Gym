@@ -459,7 +459,7 @@ p.aside-text-gradient {
     margin-top: 0px;
     padding-top: 78px;
     color: rgba(43, 53, 65, 1);
-    width: 700px;
+    
 }
 .form-title::before {
     content: "";
@@ -734,59 +734,59 @@ ul.advantages-item {
 
 
 
-@media (min-width: 1001px) {
-    .header-burger {
-        display: none;
-    }
-}
-
-@media (max-width: 1000px) {
-    .container {
-        max-width: 738px;
-        margin: 0 auto;
-    }
-    .header-item {
-        flex-basis: 67.5%;
-    }
-    .bg {
-        flex-direction: column;
-        flex-wrap: wrap;        
-    }
-    
-    .box {
-        position: relative;
-        margin-top: 100px;
-        max-width: 100%;
-        right: 0;
-    }
-    .box-image {
-        width: 90%;
-        height: 575px;
-        left: 15px;
-        right: 15px;
-    }
-    .box-gradient-left {
-        height: 613px;
-    }   
-    .box-gradient-right {
-        height: 613px;
-    }    
-    .contant {
-        padding-top: 10px;
-    }
-    .preview-grid {
-        grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 80px;
-    }
-    .preview-grid:nth-child(3) {
-        justify-items: center;
-    }
-    .aside-grid {
-        grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 80px;
-        grid-template-rows: -webkit-max-content;
-        grid-template-rows: max-content;     
+    @media (min-width: 1001px) {
+        .header-burger {
+            display: none;
         }
+    }
+
+    @media (max-width: 1000px) {
+        .container {
+            max-width: 738px;
+            margin: 0 auto;
+        }
+        .header-item {
+            flex-basis: 67.5%;
+        }
+        .bg {
+            flex-direction: column;
+            flex-wrap: wrap;        
+        }
+        
+        .box {
+            position: relative;
+            margin-top: 100px;
+            max-width: 100%;
+            right: 0;
+        }
+        .box-image {
+            width: 90%;
+            height: 575px;
+            left: 15px;
+            right: 15px;
+        }
+        .box-gradient-left {
+            height: 613px;
+        }   
+        .box-gradient-right {
+            height: 613px;
+        }    
+        .contant {
+            padding-top: 10px;
+        }
+        .preview-grid {
+            grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 80px;
+        }
+        .preview-grid:nth-child(3) {
+            justify-items: center;
+        }
+        .aside-grid {
+            grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 80px;
+            grid-template-rows: -webkit-max-content;
+            grid-template-rows: max-content;     
+            }
         .aside-grid-item:nth-child(1) {
             grid-column: 1/2;
             grid-row: 1/2;   
@@ -832,7 +832,6 @@ ul.advantages-item {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
-
         .footer-item {
             display: block;
         }
@@ -954,12 +953,10 @@ ul.advantages-item {
             height: 300px;            
         }
         .preview-box3 {
-            max-height: 310px;
-             
+            max-height: 310px;             
             background-image: url(../images/Vebinar4.png);  
             width: 100%;
-}      
-        }
+        }      
         h3 {
             position: absolute;
             width: 112px;            
@@ -1084,7 +1081,7 @@ ul.advantages-item {
             font-size: 10px;
             margin-bottom: 15px;
         }
-    
+    }
 
     @media (max-width: 360px) {
         .container {
@@ -1112,7 +1109,7 @@ ul.advantages-item {
             margin-left: 0px;
         }
         .contant-btn {            
-            width: 100%;
+        width: 100%;
         display: inline-block;
         text-align: center;
         justify-content: center;
@@ -1234,8 +1231,7 @@ ul.advantages-item {
             gap: 20px;
             margin-bottom: 80px;
             flex-direction: column;
-        }
-        
+        }        
         .aside-name {
             display: flex;
             flex-direction: column;            
@@ -1372,8 +1368,7 @@ ul.advantages-item {
             justify-content: space-between;
             margin-top: 15px;
             margin-bottom: 20px;
-        }
-        
+        }        
         .e-mail a::before {
             width: 20px;
             height: 20px;
